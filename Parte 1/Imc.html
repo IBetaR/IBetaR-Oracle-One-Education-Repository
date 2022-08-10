@@ -1,0 +1,68 @@
+<meta charset="UTF-8">
+
+<h1>IMC</h1>
+
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br>")
+    }
+
+    function print(text) {
+
+        document.write(text);
+        saltarLinea();
+    }
+
+    function calcularImc (peso, altura) {
+    
+        return (peso /(altura*altura));
+       
+    }
+
+    var nombreUsuario = prompt("Ingrese su nombre: ");
+    var pesoUsuario = parseFloat(prompt(nombreUsuario + " Informe su peso: ")) ;
+    var alturaUsuario = parseFloat(prompt(nombreUsuario +" Informe su altura: "));
+
+    imcCalculado = calcularImc(pesoUsuario, alturaUsuario);
+
+    print(imcCalculado);
+
+    print("El índice de masa corporal del usuario " + nombreUsuario + " es: " + imcCalculado);
+   
+    if(imcCalculado < 18.5){
+        print("El IMC del usuario " + nombreUsuario + " esta en insuficiencia ponderal");
+        
+    };
+
+    if(imcCalculado >= 18.5 && imcCalculado < 24.9){
+        print("El IMC del usuario " + nombreUsuario + " esta en el intervalo normal");
+    };
+    
+    if(imcCalculado >= 25){
+        print("El usuario " + nombreUsuario + " tiene sobrepeso");
+    };
+    if(imcCalculado > 25 && imcCalculado < 29){
+        print("El usuario " + nombreUsuario + " está en preobesidad");
+    };
+
+    if(imcCalculado >= 30 ){
+        print("El usuario " + nombreUsuario + " está en obesidad");
+    };
+    
+    if(imcCalculado > 30 && imcCalculado < 39.9){
+        print("El usuario " + nombreUsuario + " está en preobesidad");
+    };
+    
+
+    saltarLinea();
+
+    // calcularImc(89, 1.76);
+
+</script>
+
+
+
+Esto está fuera de JavaScript...

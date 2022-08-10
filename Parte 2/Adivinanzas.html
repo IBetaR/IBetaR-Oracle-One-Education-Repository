@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+
+<h1>Adivinanzas</h1>
+
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br>")
+    }
+
+    function print(text) {
+
+        document.write(text);
+        saltarLinea();
+    }
+
+    var numeroPensado = Math.round(Math.random()*10);
+    console.log(numeroPensado)
+
+    var intentos = 3;
+    var contador = 1;
+
+    while(contador <= intentos){
+
+        var numeroLanzado = parseInt(prompt("Ingrese número entre 0 y 10: "))
+
+        if(numeroPensado == numeroLanzado){
+
+             print("Usted acertó, en el intento: "+ contador + " el numero pensado era: "+ numeroPensado);
+             break;
+
+    } else {
+            print("usted erró, el número pensado era: " + numeroPensado);
+            
+        }
+    
+    contador++;
+
+    }
+
+    print("FIN")
+
+    
+
+    
+
+    // if(numeroPensado == numeroLanzado){
+    //     print("Usted acertó");
+    // }
+    // else{
+    //     if (numeroLanzado > numeroPensado){
+    //         print("usted erró, el número pensado era menor que tu número");
+    //     } 
+    //     else{
+    //         print("usted erró, el número pensado era mayor que tu número");
+    //     }
+    // }
+
+
+
+</script>
+
+
+
+Esto está fuera de JavaScript...

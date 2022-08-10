@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<h1>Lotería</h1>
+
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br>")
+    }
+
+    function print(text) {
+
+        document.write(text);
+        saltarLinea();
+    }
+
+    var numeroSorteo = Math.round(Math.random()*n);
+
+    function sorteo(n) {
+        if(n == numeroLanzado){
+            print("Felicitaciones!!! usted acertó!");
+        } else {
+            if(numeroLanzado > n){
+            print("El número era: " + n);
+        }else{
+            print("El número ganador es menor al escogido");
+        }
+
+        }
+        
+    }
+
+    console.log(n)
+    var n = parseInt(prompt("Ingrese un número: "))
+    // if(numeroLanzado < 0 && numeroLanzado >10){
+    //     print("Número fuera del intervalo 0 y 10, intente una vez más!")
+    //     var numeroLanzado = parseInt(prompt("Ingrese número entre 0 y 10: "))
+    // }  
+
+    
+
+
+
+   
+ 
+
+    saltarLinea();
+
+    // calcularImc(89, 1.76);
+
+</script>
+
+
+
+Esto está fuera de JavaScript...

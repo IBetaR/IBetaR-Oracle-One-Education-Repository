@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h1>Media de Edades en Una Familia</h1>
+
+
+<script>
+
+    function saltarLinea() {
+
+        document.write("<br>")
+    }
+
+    function print(text) {
+
+        document.write(text);
+        saltarLinea();
+    }
+
+    var cantidadDeMiembros = parseInt(prompt("Ingrese cantidad de miembros en la familia: "));
+    var contador = 1;
+    var totalEdades = 0;
+    
+    while(contador <= cantidadDeMiembros){
+        
+        edad = parseInt(prompt("Ingrese edad del familiar: "));
+        totalEdades = totalEdades + edad;
+        contador ++;
+        
+    }
+    mediaEdades = Math.round(totalEdades/cantidadDeMiembros);
+    print("El promedio de edades es: " + mediaEdades)
+
+    var edadPadre = 42;
+    var edadMadre = 35;
+    var edadHijo = 10;
+    var edadHija = 20;
+
+
+</script>
+
+
+
+Esto está fuera de JavaScript...
